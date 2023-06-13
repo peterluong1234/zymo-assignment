@@ -1,0 +1,57 @@
+:root {
+	--normal-font: 400;
+	--bold-font: 600;
+	--bolder-font: 900;
+	--primary-color: #398245;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#main-banner {
+	/* object-fit: contain; */
+	width: 1200px;
+}
+
+.hero-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	#header {
+		color: var(--primary-color);
+		font-size: 40px;
+	}
+
+	.icons {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.icon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 40px 50px;
+		#icon-image {
+			width:150px;
+			/* height: auto; */
+		}
+	}
+}
+
+button {
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	display: inline-block;
+	font-weight: var(--bolder-font);
+	font-size: 20px;
+	padding: 10px 0px;
+	width: 200px;
+}
