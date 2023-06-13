@@ -3,6 +3,7 @@
 	--bold-font: 600;
 	--bolder-font: 900;
 	--primary-color: #398245;
+	--secondary-background: #f1f1f1;
 }
 
 * {
@@ -14,6 +15,17 @@
 #main-banner {
 	/* object-fit: contain; */
 	width: 1200px;
+}
+
+button {
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	display: inline-block;
+	font-weight: var(--bolder-font);
+	font-size: 20px;
+	padding: 10px 0px;
+	width: 200px;
 }
 
 .hero-section {
@@ -45,13 +57,10 @@
 	}
 }
 
-button {
-	background-color: var(--primary-color);
-	color: white;
-	border: none;
-	display: inline-block;
-	font-weight: var(--bolder-font);
-	font-size: 20px;
-	padding: 10px 0px;
-	width: 200px;
+.description {
+	background-color: var(--secondary-background);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
