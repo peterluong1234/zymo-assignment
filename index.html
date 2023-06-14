@@ -15,87 +15,100 @@
 </head>
 
 <body>
-	<section class="main-banner"><img id="main-banner" src="/images/banner.jpg" /></section>
-	<section class="hero-section">
-		<h1 id="header">Header Text</h1>
-		<h4>Lorem Ipsum</h4>
-		<div class="icons">
-			<div class="icon">
-				<img id="icon-image" src="/icons/checkmark_icon.jpg" />
-				<div>Lorem ipsum </div>
+
+	<header class="main-banner"><img id="main-banner" src="/images/banner.jpg" /></header>
+	<main>
+		<section class="hero-section">
+			<h1 id="header">Header Text</h1>
+			<h4>Lorem Ipsum</h4>
+			<div class="icons">
+				<div class="icon">
+					<img id="icon-image" src="/icons/checkmark_icon.jpg" />
+					<div>Lorem ipsum </div>
+				</div>
+				<div class="icon">
+					<img id="icon-image" src="/icons/graphs_icon.jpg" />
+					<div>Lorem ipsum </div>
+				</div>
+				<div class="icon">
+					<img id="icon-image" src="/icons/bullseye_icon.jpg" />
+					<div>Lorem ipsum </div>
+				</div>
 			</div>
-			<div class="icon">
-				<img id="icon-image" src="/icons/graphs_icon.jpg" />
-				<div>Lorem ipsum </div>
-			</div>
-			<div class="icon">
-				<img id="icon-image" src="/icons/bullseye_icon.jpg" />
-				<div>Lorem ipsum </div>
-			</div>
-		</div>
-		<button>Inquire Now</button>
+			<a href="#contact""><button>Inquire Now</button></a>
 	</section>
 
-	<section class="description">
-		<h1 id="header">Header Text</h1>
-		<h4 id="sub-header">Lorem Ipsum</h4>
-		<p class="text-body">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-			dolore magna
-			aliqua. Et ultrices neque ornare aenean euismod elementum nisi. Aliquet risus feugiat in ante metus dictum.
-			Vestibulum
-			sed arcu non odio euismod. Ornare quam viverra orci sagittis eu. Nisi vitae suscipit tellus mauris a diam
-			maecenas sed
-			enim. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Amet luctus venenatis lectus magna
-			fringilla
-			urna porttitor. Massa ultricies mi quis hendrerit. Duis convallis convallis tellus id interdum. Diam
-			maecenas ultricies mi
-			eget mauris pharetra et ultrices.
-		</p>
-		<br />
-		<p class="text-body">
-			Lorem ipsum dolor sit amet. Nisi est sit amet facilisis magna etiam tempor. Quam lacus suspendisse faucibus
-			interdum
-			posuere lorem ipsum. Amet massa vitae tortor condimentum. Lobortis scelerisque fermentum dui faucibus in
-			ornare. Nisl
-			nisi scelerisque eu ultrices vitae auctor eu augue ut. Morbi tincidunt ornare massa eget egestas. Consequat
-			id porta nibh
-			venenatis cras. Nibh venenatis cras sed felis eget. Fringilla urna porttitor rhoncus dolor purus. Et netus
-			et malesuada fames
-			ac turpis egestas. Diam ut venenatis tellus in metus vulputate.
-		</p>
-	</section>
-	<section class="contact">
+	<section class=" description">
+				<h1 id="header">Header Text</h1>
+				<h4 id="sub-header">Lorem Ipsum</h4>
+				<p class="text-body">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna
+					aliqua. Et ultrices neque ornare aenean euismod elementum nisi. Aliquet risus feugiat in ante metus
+					dictum.
+					Vestibulum
+					sed arcu non odio euismod. Ornare quam viverra orci sagittis eu. Nisi vitae suscipit tellus mauris a
+					diam
+					maecenas sed
+					enim. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Amet luctus venenatis
+					lectus magna
+					fringilla
+					urna porttitor. Massa ultricies mi quis hendrerit. Duis convallis convallis tellus id interdum. Diam
+					maecenas ultricies mi
+					eget mauris pharetra et ultrices.
+				</p>
+				<br />
+				<p class="text-body">
+					Lorem ipsum dolor sit amet. Nisi est sit amet facilisis magna etiam tempor. Quam lacus suspendisse
+					faucibus
+					interdum
+					posuere lorem ipsum. Amet massa vitae tortor condimentum. Lobortis scelerisque fermentum dui
+					faucibus in
+					ornare. Nisl
+					nisi scelerisque eu ultrices vitae auctor eu augue ut. Morbi tincidunt ornare massa eget egestas.
+					Consequat
+					id porta nibh
+					venenatis cras. Nibh venenatis cras sed felis eget. Fringilla urna porttitor rhoncus dolor purus. Et
+					netus
+					et malesuada fames
+					ac turpis egestas. Diam ut venenatis tellus in metus vulputate.
+				</p>
+		</section>
 
-		<form class="contact-form">
-			<h1>Form</h1>
-			<div class="form-group">
-				<div class="form-line">
-					<label>First Name</label>
-					<input type="text" id="firstName" required>
+		<section id="contact" class="contact">
+			<form class="contact-form" onsubmit="handleSubmit(event)">
+				<h1>Form</h1>
+				<div class="form-group">
+					<div class="form-line">
+						<label>First Name</label>
+						<input type="text" id="firstName" required>
+					</div>
+					<div class="form-line">
+						<label>Last Name</label>
+						<input type="text" id="lastName" required>
+					</div>
 				</div>
-				<div class="form-line">
-					<label>Last Name</label>
-					<input type="text" id="lastName" required>
+				<div class="form-group">
+					<div class="form-line">
+						<label>Company</label>
+						<input type="text" id="company" required>
+					</div>
+					<div class="form-line">
+						<label>Role</label>
+						<input type="text" id="role" required>
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<div class="form-line">
-					<label>Company</label>
-					<input type="text" id="company" required>
+				<div class="text-area">
+					<label>Additional Comments</label>
+					<textarea id="comments" rows="5" required></textarea>
 				</div>
-				<div class="form-line">
-					<label>Last Name</label>
-					<input type="text" id="name" required>
-				</div>
-			</div>
-			<div class="text-area">
-				<label>Additional Comments</label>
-				<textarea id="comments" rows="5" required></textarea>
-			</div>
-			<button type="submit">Submit</button>
-		</form>
-	</section>
+				<button type="submit">Submit</button>
+				<div id="success" style="display: none;">Successfully submitted.</div>
+			</form>
+
+		</section>
+	</main>
 	<script src="/app.js"></script>
 </body>
 

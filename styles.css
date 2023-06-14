@@ -16,9 +16,13 @@
 	box-sizing: border-box;
 }
 
+ body {
+	width: 100%;
+ }
+
 #main-banner {
-	object-fit: contain;
-	/* width: 1200px; */
+	width: 100%;
+	height: auto;
 }
 
 input {
@@ -137,5 +141,8 @@ button:hover {
 		padding: 15px;
 		width: 600px;
 		padding-bottom: 20px;
+	}
+	#success {
+		padding-top: 10px;
 	}
 }
