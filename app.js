@@ -8,10 +8,18 @@ function handleSubmit(e) {
     const comments = document.getElementById("comments").value;
     const success = document.getElementById("success");
 
+    const formValues = {
+        firstName: firstName,
+        lastName: lastName,
+        company: company,
+        role: role,
+        comments: comments,
+    }
+    console.log(formValues)
+
+    // validation for success
     if (firstName && lastName && company && role && comments) {
-        success.style.display = "block";    
+        success.style.display = "block";
     }
 
-    
-    console.log()
 }
