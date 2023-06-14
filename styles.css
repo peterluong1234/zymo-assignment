@@ -60,7 +60,7 @@ button:hover {
 .main-banner {
     background-image: url('images/banner.jpg');
     background-size: cover;
-    height: 400px;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@ button:hover {
     .form-group {
         display: flex;
         flex-direction: row;
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .form-part {
@@ -177,8 +177,6 @@ button:hover {
 @media(max-width: 900px) {
     .main-banner {
         align-items: flex-start;
-        height: 300px;
-        /* object-position: -300px; */
     }
 
     .hero-section {
