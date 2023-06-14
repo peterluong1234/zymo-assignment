@@ -1,206 +1,207 @@
 :root {
-	--normal-font: 300;
-	--semi-bold-font: 500;
-	--bold-font: 600;
-	--bolder-font: 700;
-	--primary-color: #398245;
-	--secondary-background: #f1f1f1;
+    --normal-font: 300;
+    --semi-bold-font: 500;
+    --bold-font: 600;
+    --bolder-font: 700;
+    --primary-color: #398245;
+    --secondary-background: #f1f1f1;
 }
 
 * {
-	font-family: 'Montserrat', sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	  scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-	width: 100%;
+    width: 100%;
 }
 
 input {
-	border: 1px solid gray;
-	border-radius: 5px;
-	padding: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 10px;
 }
 
 label {
-	padding-bottom: 5px;
-	font-size: .8em;
-	font-weight: var(--bold-font);
+    padding-bottom: 5px;
+    font-size: .8em;
+    font-weight: var(--bold-font);
 }
 
 textarea {
-	border: 1px solid gray;
-	border-radius: 5px;
-	resize: none;
-	padding: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px 10px;
 }
 
 button {
-	background-color: var(--primary-color);
-	color: white;
-	border: none;
-	display: inline-block;
-	font-weight: var(--bolder-font);
-	font-size: 20px;
-	padding: 10px 0px;
-	width: 200px;
-	border-radius: 5px;
-	transition-duration: 0.4s
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    display: inline-block;
+    font-weight: var(--bolder-font);
+    font-size: 20px;
+    padding: 10px 0px;
+    width: 200px;
+    border-radius: 5px;
+    transition-duration: 0.4s
 }
 
 button:hover {
-	background-color: #4e9c5b;
-	cursor: pointer;
+    background-color: #4e9c5b;
+    cursor: pointer;
 }
 
 
 .main-banner {
-	background-image: url('/images/banner.jpg');
-	background-size: cover;
-	height: 400px;
-	width: 100%;
-	display: flex;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .hero-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
 
-	.header {
-		color: #569c62;
-		font-size: 2em;
-	}
+    .header {
+        color: #569c62;
+        font-size: 2em;
+    }
 
-	.sub-header {
-		font-size: 1.2em;
-	}
+    .sub-header {
+        font-size: 1.2em;
+    }
 
-	.icons {
-		display: flex;
-		flex-direction: row;
-		padding: 20px 0px;
-	}
+    .icons {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0px;
+    }
 
-	.icon {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding: 40px 50px;
-		border-radius: 10px;
-		transition: box-shadow .3s;
+    .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 50px;
+        border-radius: 10px;
+        transition: box-shadow .3s;
 
-		#icon-image {
-			width: 150px;
-			height: auto;
-		}
+        #icon-image {
+            width: 150px;
+            height: auto;
+        }
 
-		.icon-text {
-			padding-top: 10px;
-			font-weight: var(--semi-bold-font);
-		}
-	}
+        .icon-text {
+            padding-top: 10px;
+            font-weight: var(--semi-bold-font);
+        }
+    }
 
-	.icon:hover {
-		box-shadow: 0 0 11px rgba(72, 72, 72, 0.2);
-	}
+    .icon:hover {
+        box-shadow: 0 0 11px rgba(72, 72, 72, 0.2);
+    }
 }
 
 .description {
-	background-color: var(--secondary-background);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 40px 0 60px 0;
+    background-color: var(--secondary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 60px 0;
 
-	.header {
-		font-weight: var(--bold-font);
-		padding-bottom: 15px;
-	}
+    .header {
+        font-weight: var(--bold-font);
+        padding-bottom: 15px;
+    }
 
-	.sub-header {
-		font-weight: var(--bold-font);
-		font-size: 1.2em;
-		padding-bottom: 30px;
-	}
+    .sub-header {
+        font-weight: var(--bold-font);
+        font-size: 1.2em;
+        padding-bottom: 30px;
+    }
 
-	.text-body {
-		width: 60%;
-		font-size: .9em;
-		font-weight: var(--semi-bold-font);
-	}
+    .text-body {
+        width: 60%;
+        font-size: .9em;
+        font-weight: var(--semi-bold-font);
+    }
 }
 
 .contact-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 30px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 80px 0px;
 
-	.form-group {
-		display: flex;
-		flex-direction: row;
-		padding: 10px;
-	}
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
 
-	.form-part {
-		display: flex;
-		flex-direction: column;
-		padding: 15px;
-		width: 300px;
-	}
+    .form-part {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        width: 300px;
+    }
 
-	.text-area {
-		display: flex;
-		flex-direction: column;
-		padding: 15px;
-		width: 600px;
-		padding-bottom: 20px;
-	}
+    .text-area {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        width: 600px;
+        padding-bottom: 20px;
+    }
 
-	#success {
-		padding-top: 10px;
-	}
+    #success {
+        padding-top: 10px;
+    }
 }
 
 @media(max-width: 900px) {
-	.main-banner {
-		align-items: flex-start;
-		height: 300px;
-		/* object-position: -300px; */
-	}
+    .main-banner {
+        align-items: flex-start;
+        height: 300px;
+        /* object-position: -300px; */
+    }
 
-	.hero-section {
-		.icons {
-			flex-direction: column;
-		}
-	}
+    .hero-section {
+        .icons {
+            flex-direction: column;
+        }
+    }
 
-	.text-body {
-		width: 80%;
-	}
+    .text-body {
+        width: 80%;
+    }
 
-	.contact-form {
-		.form-group {
-			flex-direction: column;
-		}
+    .contact-form {
+        .form-group {
+            flex-direction: column;
+        }
 
-		.form-part {
-			width: 400px;
-		}
-		.text-area {
-			width: 400px;
-		}
-	}
+        .form-part {
+            width: 400px;
+        }
+
+        .text-area {
+            width: 400px;
+        }
+    }
 }
