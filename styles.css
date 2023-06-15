@@ -33,14 +33,7 @@ input {
     border-radius: 5px;
     padding: 15px 10px;
     font-size: medium;
-    /* background-color: var(--secondary-background); */
 }
-
-/* label {
-    padding-bottom: 5px;
-    font-size: .8em;
-    font-weight: var(--bold-font);
-} */
 
 textarea {
     border: 1px solid rgb(180, 180, 180);
@@ -48,7 +41,6 @@ textarea {
     resize: none;
     padding: 10px 10px;
     font-size: medium;
-    /* background-color: var(--secondary-background); */
 }
 
 button {
@@ -71,9 +63,10 @@ button:hover {
 
 /* Landing Page Sections */
 .main-banner {
-    background-color: rgba(207, 165, 79, .1);
     background-blend-mode: darken;
-    background-image: url('images/banner2.png');
+    background-image: 
+        linear-gradient(to right, rgba(31, 31, 31, 0.52), rgba(255, 255, 255, 0.73)),
+        url('images/banner2.png');
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -86,15 +79,12 @@ button:hover {
         display: flex;
         flex-direction: column;
         text-align: left;
-        /* justify-content: flex-end; */
-        padding-left: 200px;
-        /* margin-left: auto; */
+        padding-left: 5em;
         gap: 1.5em;
         width: 400px;
         color: white;
 
         & h1 {
-            text-shadow: 2px 2px gray;
             font-size: 2.5em;
         }
     }
@@ -110,7 +100,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 30px 0px;
-
+    
     .header {
         color: #569c62;
 
@@ -177,6 +167,7 @@ h1 {
         flex-direction: column;
         align-items: flex-start;
         padding-left: 40px;
+        margin: 0px 10px;
 
         .sub-header {
             font-weight: var(--bold-font);
@@ -211,14 +202,16 @@ h1 {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            gap: 10px;
             padding: 5px 0px;
             width: 100%;
+
         }
 
         .form-part {
             display: flex;
             flex-direction: column;
-            padding: 5px;
+            padding: 5px 0px;
             width: 100%;
         }
 
@@ -245,7 +238,7 @@ h1 {
 
 @media(max-width: 900px) {
     body {
-        padding: 0 5px;
+        padding: 5px;
     }
 
     input,
@@ -256,6 +249,9 @@ h1 {
     .main-banner {
         height: 400px;
         align-items: center;
+        background-image: 
+        linear-gradient(to top, rgba(31, 31, 31, 0.52), rgba(255, 255, 255, 0.73)),
+        url('images/banner2.png');
 
         .banner-box {
             text-align: center;
@@ -263,9 +259,9 @@ h1 {
             justify-content: center;
             width: 80%;
             padding: 100px 0 0 0;
-
+            gap: 1em;
             & h1 {
-                font-size: 2em;
+                font-size: 1.75em;
             }
         }
     }
@@ -279,12 +275,15 @@ h1 {
 
     .description {
         flex-direction: column;
+        background: white;
 
         & img {
-            width: 100%;
-            aspect-ratio: 4 / 3;
+            width: 70%;
+            aspect-ratio: 8 / 7;
             object-fit: cover;
             object-position: 50% 30%;
+            position: relative;
+            top: 30px;
         }
 
         .description-text {
@@ -293,8 +292,10 @@ h1 {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 0px;
-    
+            padding: 60px 0px;
+            background-color: var(--secondary-background);
+            border-radius: 5px;
+
             .sub-header {
                 font-weight: var(--bold-font);
                 font-size: 1.2em;
@@ -317,14 +318,15 @@ h1 {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                padding: 0px;
             }
 
             .form-part {
-                padding: 10px;
+                padding: 5px 0px;
             }
 
             .text-area {
-                padding: 10px;
+                padding: 10px 0px;
             }
         }
     }
