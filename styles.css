@@ -121,20 +121,26 @@ h1 {
     .icon {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        text-align: left;
         padding: 40px 50px;
         border-radius: 10px;
         transition: box-shadow .3s;
+        gap: 5px;
 
         #icon-image {
             width: 150px;
             height: auto;
         }
-
+        
         .icon-text {
             padding-top: 10px;
-            font-weight: var(--semi-bold-font);
+        }
+
+        & p {
+            padding-top: 5px;
+            font-size: .8em;
         }
     }
 
@@ -205,7 +211,7 @@ h1 {
             gap: 10px;
             padding: 5px 0px;
             width: 100%;
-
+            margin: 10px 0;
         }
 
         .form-part {
@@ -270,6 +276,13 @@ h1 {
         .icons {
             flex-direction: column;
             width: 80%;
+
+            .icon {
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                margin: 10px;
+            }
         }
     }
 
