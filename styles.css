@@ -1,42 +1,54 @@
 :root {
-    --normal-font: 300;
+    --normal-font: 400;
     --semi-bold-font: 500;
     --bold-font: 600;
     --bolder-font: 700;
     --primary-color: #398245;
-    --secondary-background: #f1f1f1;
+    --secondary-background: #f7f7f7;
 }
 
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
 }
+
 
 /*  general element changes */
-input {
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 10px 10px;
+section {
+    border-radius: 10px;
 }
 
-label {
+input {
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    padding: 15px 10px;
+    font-size: medium;
+    /* background-color: var(--secondary-background); */
+}
+
+/* label {
     padding-bottom: 5px;
     font-size: .8em;
     font-weight: var(--bold-font);
-}
+} */
 
 textarea {
-    border: 1px solid gray;
+    border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     resize: none;
     padding: 10px 10px;
+    font-size: medium;
+    /* background-color: var(--secondary-background); */
 }
 
 button {
@@ -59,14 +71,37 @@ button:hover {
 
 /* Landing Page Sections */
 .main-banner {
-    background-image: url('images/banner.jpg');
+    background-color: rgba(207, 165, 79, .1);
+    background-blend-mode: darken;
+    background-image: url('images/banner2.png');
     background-size: cover;
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
+    .banner-box {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        /* justify-content: flex-end; */
+        padding-left: 200px;
+        /* margin-left: auto; */
+        gap: 1.5em;
+        width: 400px;
+        color: white;
+
+        & h1 {
+            text-shadow: 2px 2px gray;
+            font-size: 2.5em;
+        }
+    }
+}
+
+h1 {
+    font-size: 2em;
 }
 
 .hero-section {
@@ -78,7 +113,7 @@ button:hover {
 
     .header {
         color: #569c62;
-        font-size: 2em;
+
     }
 
     .sub-header {
@@ -88,7 +123,9 @@ button:hover {
     .icons {
         display: flex;
         flex-direction: row;
-        padding: 20px 0px;
+        /* padding: 20px 0px; */
+        justify-content: space-around;
+        width: 80%;
     }
 
     .icon {
@@ -119,26 +156,39 @@ button:hover {
 .description {
     background-color: var(--secondary-background);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 40px 0 60px 0;
+    /* padding: 0 50px; */
 
-    .header {
-        font-weight: var(--bold-font);
-        padding-bottom: 15px;
+    & img {
+        width: 40%;
+        /* padding: 40px 0; */
+        border-radius: 5px;
+        aspect-ratio: 5 / 6;
+        object-fit: cover;
+        object-position: 50% 30%;
     }
 
-    .sub-header {
-        font-weight: var(--bold-font);
-        font-size: 1.2em;
-        padding-bottom: 30px;
-    }
-
-    .text-body {
+    .description-text {
         width: 60%;
-        font-size: .9em;
-        font-weight: var(--semi-bold-font);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+
+        .sub-header {
+            font-weight: var(--bold-font);
+            font-size: 1.2em;
+            padding-bottom: 30px;
+        }
+
+        & p {
+            width: 90%;
+            font-size: .9em;
+            font-weight: var(--normal-font);
+        }
     }
 }
 
@@ -146,6 +196,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: #FFDC83; */
 
     .contact-form {
         display: flex;
@@ -160,20 +211,21 @@ button:hover {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding: 5px 0px;
             width: 100%;
         }
 
         .form-part {
             display: flex;
             flex-direction: column;
-            padding: 15px;
+            padding: 5px;
             width: 100%;
         }
 
         .text-area {
             display: flex;
             flex-direction: column;
-            padding: 15px;
+            padding: 5px;
             width: 100%;
             padding-bottom: 20px;
         }
@@ -185,19 +237,76 @@ button:hover {
 }
 
 /* Responsive Changes */
+@media(max-width: 1500px) {
+    .main-banner>.banner-box {
+        padding-left: 50px;
+    }
+}
+
 @media(max-width: 900px) {
+    body {
+        padding: 0 5px;
+    }
+
+    input,
+    textarea {
+        font-size: small;
+    }
+
     .main-banner {
-        align-items: flex-start;
+        height: 400px;
+        align-items: center;
+
+        .banner-box {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            padding: 100px 0 0 0;
+
+            & h1 {
+                font-size: 2em;
+            }
+        }
     }
 
     .hero-section {
         .icons {
             flex-direction: column;
+            width: 80%;
         }
     }
 
-    .text-body {
-        width: 80%;
+    .description {
+        flex-direction: column;
+
+        & img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: 50% 30%;
+        }
+
+        .description-text {
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0px;
+    
+            .sub-header {
+                font-weight: var(--bold-font);
+                font-size: 1.2em;
+                padding-bottom: 30px;
+            }
+    
+            & p {
+                width: 90%;
+                font-size: .9em;
+                font-weight: var(--normal-font);
+            }
+        }
     }
 
     .contact {
@@ -208,6 +317,14 @@ button:hover {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+            }
+
+            .form-part {
+                padding: 10px;
+            }
+
+            .text-area {
+                padding: 10px;
             }
         }
     }
